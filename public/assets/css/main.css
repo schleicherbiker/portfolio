@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.icon {  
+    width: 6vh;
+    margin: 2vh;
+    padding: 2vh;
+    font-size: 6vh;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    text-decoration: none;
+    animation-timing-function: ease-out;
+}
+
+.icon:hover {
+    background: rgba(240, 240, 240, 0.2);
+}
+
+#bg {
+    height: 100%;
+    background: linear-gradient(to bottom right, #2eabf2, lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#name {
+    position: relative;
+    font-size: 3.5em;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2vh;
+    animation: fadeInAndUp 2.5s;
+}
+
+#gh, #li, #mail {
+    position: relative;
+}
+
+#gh {
+    animation: fadeInAndUp 3.5s;
+}
+
+#li {
+    animation: fadeInAndUp 4s;
+}
+
+#mail {
+    animation: fadeInAndUp 4.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeInAndUp {
+    0%      { opacity: 0; left: 0px; bottom: -4vh;} 
+    50%     { opacity: 0; left: 0px; bottom: -4vh;} 
+    100%    { opacity: 1; left: 0px; bottom: 0px;}
+}
+
